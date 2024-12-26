@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { ComponentsModule } from '../components/components.module';
 import { AdminComponent } from './admin/admin.component';
@@ -8,9 +9,6 @@ import { ProductListComponent } from './product-list/produt-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
-import { NavBarComponent } from '../components/nav-bar/nav-bar.component';
-import { MatIconModule } from '@angular/material/icon';
-import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -20,9 +18,8 @@ import { MatMenuModule } from '@angular/material/menu';
     ProductListComponent,
     ProductDetailsComponent,
     CartComponent,
-    CheckoutComponent,
-    NavBarComponent,
+    CheckoutComponent
   ],
-  imports: [CommonModule, ComponentsModule, MatIconModule, MatMenuModule],
+  imports: [CommonModule, ComponentsModule],
 })
 export class PagesModule {}
